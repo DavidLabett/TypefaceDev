@@ -1,4 +1,4 @@
-# TypeFaceDev
+# TypefaceDev
 
 This small project - **TypeFaceDev** - is a jQuery-powered font preview and purchasing site designed for developers. It allows users to explore various typefaces, preview them dynamically, and add them to a shopping cart for purchase.
 
