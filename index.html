@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font imports -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=DM+Serif+Display:ital@0;1&family=Nova+Mono&family=Pixelify+Sans:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofia&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- folder icons -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=folder"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <!-- stylesheet & script -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>Dev Typefaces</title>
+  </head>
+
+  <body>
+    <nav>
+      <ul class="navBar">
+        <li><a href="#home">[H] HOME</a></li>
+        <li><a href="#about">[A] ABOUT</a></li>
+        <li class="consoleNav"><a href="#theme">[T] THEME</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1 class="typefaceDev">
+        Welcome to<br /><span class="typeface">Typeface</span
+        ><span class="dev">D</span><span class="dev">e</span
+        ><span class="dev">v</span>
+      </h1>
+      <article class="headerBread">
+        <p class="headerP">
+          Explore a world of diverse typefaces.<br />Assemble your own unique
+          toolkit.<br />Communicate brilliance.
+        </p>
+        <details>
+          <summary class="viewDiscounts">Our Discounts</summary>
+          <div class="discountInfo">
+            <pre><code>if (cartItems.length >= 6) {
+    discount = 0.3; // 30% off
+} else if (cartItems.length >= 3) {
+    discount = 0.2; // 20% off
+} else {
+    discount = 0;  // No discount
+}
+if (input.val() === '1337') {
+    discount = 'Everything is free!'
+}</code></pre>
+          </div>
+        </details>
+      </article>
+      <div class="cartWrapper">
+        <p>
+          [C] CART<span
+            >TOTAL:
+            <span
+              >[ <span id="totalAmount" class="totalAmount">0.00</span> ]</span
+            ></span
+          >
+        </p>
+
+        <div class="cart">
+          <p class="discount">[ DISCOUNT=<span class="bool">false ]</span></p>
+          <ul>
+            <!-- append <li> Typefaces in cart here -->
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="anatomyoftype">
+        <img src="assets/anatomy_of_type.png" alt="anatomy-of-type" />
+      </div>
+    </section>
+
+    <article class="filters">
+      <div class="typometer">
+        <img src="assets/typometer.png" alt="" />
+      </div>
+      <div class="article-text">
+        <span>/ FILTER</span>
+        <span class="clearFilters">CLEAR FILTERS</span>
+      </div>
+    </article>
+
+    <aside class="asideDetails">
+      <details>
+        <summary><i class="material-icons">folder_open</i> Type</summary>
+        <ul>
+          <li><input type="checkbox" /> Modern</li>
+          <li><input type="checkbox" /> Classic</li>
+          <li><input type="checkbox" /> Vintage</li>
+          <li><input type="checkbox" /> Minimalist</li>
+          <li><input type="checkbox" /> Bold</li>
+          <li><input type="checkbox" /> Elegant</li>
+        </ul>
+      </details>
+      <details>
+        <summary><i class="material-icons">folder_open</i> Theme</summary>
+        <ul>
+          <li><input type="checkbox" /> Decorative</li>
+          <li><input type="checkbox" /> Handwritten</li>
+          <li><input type="checkbox" /> Geometric</li>
+          <li><input type="checkbox" /> Retro</li>
+          <li><input type="checkbox" /> Futuristic</li>
+        </ul>
+      </details>
+      <div class="fontPreviewContainerWrapper">
+        <p>[P] PREVIEW</p>
+        <div class="fontPreviewContainer">
+          <span id="fontPreview" class="fontPreview"
+            >The quick brown fox jumps over the lazy dog</span
+          >
+        </div>
+      </div>
+      <section class="previewButtons">
+        <button id="styleRegular">[R]egular</button>
+        <button id="styleItalic">[I]talic</button>
+        <button id="styleBold">[B]old</button>
+        <button id="darkModeText">[D]ark-mode</button>
+        <input
+          id="inputPreview"
+          class="inputPreview"
+          type="text"
+          placeholder="[A]waiting input.."
+        />
+      </section>
+    </aside>
+
+    <main>
+      <h2>Typefaces<span class="libamount">(17)</span></h2>
+      <section class="mainDetails">
+        <details>
+          <summary>Serif</summary>
+          <ul class="fontStore">
+            <li id="Merriweather" class="fontSelect">
+              <span class="fontName" style="font-family: 'Merriweather', serif"
+                >Merriweather</span
+              >
+              <span class="fontFamily">serif</span>
+              <span class="fontPrice">150 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Georgia" class="fontSelect">
+              <span class="fontName" style="font-family: 'Georgia', serif"
+                >Georgia</span
+              >
+              <span class="fontFamily">serif</span>
+              <span class="fontPrice">200 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Garamond" class="fontSelect">
+              <span class="fontName" style="font-family: 'Garamond', serif"
+                >Garamond</span
+              >
+              <span class="fontFamily">serif</span>
+              <span class="fontPrice">250 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Arvo" class="fontSelect">
+              <span class="fontName" style="font-family: 'Arvo', serif"
+                >Arvo</span
+              >
+              <span class="fontFamily">serif</span>
+              <span class="fontPrice">180 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Sans-Serif</summary>
+          <ul class="fontStore">
+            <li id="Roboto" class="fontSelect">
+              <span class="fontName" style="font-family: 'Roboto', sans-serif"
+                >Roboto</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">150 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Impact" class="fontSelect">
+              <span class="fontName" style="font-family: 'Impact', sans-serif"
+                >Impact</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">200 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Calibri" class="fontSelect">
+              <span class="fontName" style="font-family: 'Calibri', sans-serif"
+                >Calibri</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">250 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Futura" class="fontSelect">
+              <span class="fontName" style="font-family: 'Futura', sans-serif"
+                >Futura</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">180 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Red Hat Display" class="fontSelect">
+              <span class="fontName" style="font-family: 'Red Hat Display'"
+                >Red Hat</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">220 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Script</summary>
+          <ul class="fontStore">
+            <li id="DancingScript" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Dancing Script', cursive"
+                >Dancing Script</span
+              >
+              <span class="fontFamily">cursive</span>
+              <span class="fontPrice">150 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Caveat" class="fontSelect">
+              <span class="fontName" style="font-family: 'Caveat', cursive"
+                >Caveat</span
+              >
+              <span class="fontFamily">cursive</span>
+              <span class="fontPrice">200 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Sofia" class="fontSelect">
+              <span class="fontName" style="font-family: 'Sofia', cursive"
+                >Sofia</span
+              >
+              <span class="fontFamily">cursive</span>
+              <span class="fontPrice">250 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="PlaywriteGBS" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Playwrite GB S', cursive"
+                >Playwrite GBS</span
+              >
+              <span class="fontFamily">cursive</span>
+              <span class="fontPrice">180 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Monospaced</summary>
+          <ul class="fontStore">
+            <li id="CourierNew" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Courier New', monospace"
+                >Courier New</span
+              >
+              <span class="fontFamily">monospace</span>
+              <span class="fontPrice">150 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="NovaMono" class="fontSelect">
+              <span class="fontName" style="font-family: 'Nova Mono', monospace"
+                >Nova Mono</span
+              >
+              <span class="fontFamily">monospace</span>
+              <span class="fontPrice">200 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="LucidaConsole" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Lucida Console', monospace"
+                >Lucida Console</span
+              >
+              <span class="fontFamily">monospace</span>
+              <span class="fontPrice">250 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="FiraCode" class="fontSelect">
+              <span class="fontName" style="font-family: 'Fira Code', monospace"
+                >Fira Code</span
+              >
+              <span class="fontFamily">monospace</span>
+              <span class="fontPrice">180 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Display</summary>
+          <ul class="fontStore">
+            <li id="ChakraPetch" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Chakra Petch', cursive"
+                >Chakra Petch</span
+              >
+              <span class="fontFamily">cursive</span>
+              <span class="fontPrice">150 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="BebasNeue" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'Bebas Neue', sans-serif"
+                >Bebas Neue</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">200 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="DMSerifDisplay" class="fontSelect">
+              <span
+                class="fontName"
+                style="font-family: 'DM Serif Display', sans-serif"
+                >DM Serif Display</span
+              >
+              <span class="fontFamily">sans-serif</span>
+              <span class="fontPrice">250 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+            <li id="Cinzel" class="fontSelect">
+              <span class="fontName" style="font-family: 'Cinzel', serif"
+                >Cinzel</span
+              >
+              <span class="fontFamily">serif</span>
+              <span class="fontPrice">180 $</span>
+              <button class="buyButton">Add</button>
+            </li>
+          </ul>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 TypefaceDev</p>
+    </footer>
+  </body>
+</html>
